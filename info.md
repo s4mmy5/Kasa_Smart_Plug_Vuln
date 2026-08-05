@@ -33,7 +33,7 @@ TP4: 4.9 V
 TP5: 1.6 V
 TP6: 1.6 V
 
-## NEXT STEPS (notes)
-1. Wireshark capture from gl.inet router works but traffic is encrypted with TLS.
-2. Creating pre-master-key file for wireshark decryption might not be plausible. Another option might be using a MITM proxy and adding a trusted self-signed CA to Android phone.
-3. Unable to determine the function of TP pins. Logic Analyzer may be needed.
+# Findings
+- App will not use user CAs (requires patching).
+- TPs seem very inconsistent, logic analyzer is needed to decode protocol.
+- Using logic analyzer while plug is connected is risky. Desolder wifi board first and power with 3.3 V instead.
