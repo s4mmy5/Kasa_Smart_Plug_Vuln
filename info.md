@@ -18,6 +18,22 @@ SoC: RTL8710CF
 
 ## UART Pins
 Power pins are P1, P2, P3.
-TP1, TP2, TP3, TP4 are available.
+TP1, TP2, TP3, TP4, TP5, TP6 pins are also available.
 
 Ground: TP1, P3
+
+Voltages:
+P1: 1.9 V
+P2: 0 V
+P3: Ground
+TP1: Ground
+TP2: 4.5 V
+TP3: 1.6 V
+TP4: 4.9 V
+TP5: 1.6 V
+TP6: 1.6 V
+
+## NEXT STEPS (notes)
+1. Wireshark capture from gl.inet router works but traffic is encrypted with TLS.
+2. Creating pre-master-key file for wireshark decryption might not be plausible. Another option might be using a MITM proxy and adding a trusted self-signed CA to Android phone.
+3. Unable to determine the function of TP pins. Logic Analyzer may be needed.
