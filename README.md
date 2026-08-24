@@ -39,7 +39,38 @@ Request: GET /v2/things?page=0&pageSize=500&deviceTypes=IOT.SMARTPLUGSWITCH%2CIO
 
 Response:
 ```json
-{"thingName":"800697671ADBD01235F778F911F13ABE25A05801","appServerUrl":"https://use1-app-server.iot.i.tplinknbu.com","appServerUrlV2":"https://use1-app-server.iot.i.tplinkcloud.com","pcAppServerUrl":"https://n-use1-wap.tplinkcloud.com","pcAppServerUrlV2":"https://n-use1-wap.i.tplinkcloud.com","status":1,"thingModelId":"kasa:plug:v2","role":0,"authType":0,"shareType":"","familyId":"default1","roomId":"3QV0771Y","commonDevice":true,"commonDeviceV2":false,"nickname":"SFVNUFRZRFVN","avatarUrl":"","onboardingTime":1786735691,"category":"plug","model":"EP10(US)","crossRegion":true,"deviceName":"Smart Wi-Fi Plug Mini","deviceType":"IOT.SMARTPLUGSWITCH","oemId":"41372DE62C896B2C0E93C20D70B62DDB","hwId":"AE6865C67F6A54B756C0B5812472C825","hwVer":"1.0","fwVer":"1.0.5 Build 221021 Rel.183404","fwId":"00000000000000000000000000000000","region":"America/New_York","mac":"58D81223C8BA","isSubThing":false}
+{
+  "thingName": "800697671ADBD01235F778F911F13ABE25A05801",
+  "appServerUrl": "https://use1-app-server.iot.i.tplinknbu.com",
+  "appServerUrlV2": "https://use1-app-server.iot.i.tplinkcloud.com",
+  "pcAppServerUrl": "https://n-use1-wap.tplinkcloud.com",
+  "pcAppServerUrlV2": "https://n-use1-wap.i.tplinkcloud.com",
+  "status": 1,
+  "thingModelId": "kasa:plug:v2",
+  "role": 0,
+  "authType": 0,
+  "shareType": "",
+  "familyId": "default1",
+  "roomId": "3QV0771Y",
+  "commonDevice": true,
+  "commonDeviceV2": false,
+  "nickname": "SFVNUFRZRFVN",
+  "avatarUrl": "",
+  "onboardingTime": 1786735691,
+  "category": "plug",
+  "model": "EP10(US)",
+  "crossRegion": true,
+  "deviceName": "Smart Wi-Fi Plug Mini",
+  "deviceType": "IOT.SMARTPLUGSWITCH",
+  "oemId": "41372DE62C896B2C0E93C20D70B62DDB",
+  "hwId": "AE6865C67F6A54B756C0B5812472C825",
+  "hwVer": "1.0",
+  "fwVer": "1.0.5 Build 221021 Rel.183404",
+  "fwId": "00000000000000000000000000000000",
+  "region": "America/New_York",
+  "mac": "58D81223C8BA",
+  "isSubThing": false
+}
 ```
 
 ## Local Communication
@@ -91,14 +122,29 @@ Response
 2. The app locally communicates a (downgraded) HTTP download link to the plug.
 Rquest: 
 ```json
-{"context":{"source":"46a4d58b-6279-432c-ae23-e115c2db8354"},"system":{"download_firmware":{"url":"http://ota-download.tplinkcloud.com/firmware/EP10_FCC_1.1.1_Build_250908_Rel.112508_2025-09-08_11.26.29_1772244511144.bin"}}}
+{
+  "context": {
+    "source": "46a4d58b-6279-432c-ae23-e115c2db8354"
+  },
+  "system": {
+    "download_firmware": {
+      "url": "http://ota-download.tplinkcloud.com/firmware/EP10_FCC_1.1.1_Build_250908_Rel.112508_2025-09-08_11.26.29_1772244511144.bin"
+    }
+  }
+}
 ```
 ### Note: Authentication
 WIP. Accessing the firmware site directly returns an Access Denied response. It could be an interesting side quest to test if impersonation of the plug is possible to download other firmware versions.
 
 Response:
 ```json
-{"system":{"download_firmware":{"err_code":0}}}
+{
+  "system": {
+    "download_firmware": {
+      "err_code": 0
+    }
+  }
+}
 ```
 
 3. There are some other less interesting status request in the middle to check the update progress as a percentage. Using the `get_download_state` command.
