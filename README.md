@@ -10,8 +10,8 @@
 ![Image of Kasa Smart Wi-Fi Plug Mini as one of the first search results on Amazon](./assets/Amazon_Listing.png)
 
 # FCC ID Information
-FCC ID: 2AXJ4EP10
-Filing: https://fccid.io/2AXJ4EP10
+- FCC ID: 2AXJ4EP10
+- Filing: https://fccid.io/2AXJ4EP10
 
 # Internals
 SoC: RTL8710CF
