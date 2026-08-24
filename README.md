@@ -112,4 +112,4 @@ WIP. Ghidra is able to identify some interrupt handlers but there's no section d
 - Statically analyze firmware sample to see if there are any interesting routines or discover how the update is applied. This could lead to some cool device takeover exploits.
 - Check the security of the firmware update endpoint. I wonder what authentication protocol is being used.
 - TPs seem very inconsistent, logic analyzer is needed to decode protocol.
-    - Using logic analyzer while plug is connected is risky. Desolder wifi board first and power with 3.3 V power supply instead.
+    - Using logic analyzer while plug is connected is risky. I will need to desolder wifi board first and power with 3.3 V power supply instead.
