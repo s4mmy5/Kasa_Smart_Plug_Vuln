@@ -23,15 +23,15 @@ TP1, TP2, TP3, TP4, TP5, TP6 pins are also available.
 Ground: TP1, P3
 
 Voltages:
-P1: 1.9 V
-P2: 0 V
-P3: Ground
-TP1: Ground
-TP2: 4.5 V
-TP3: 1.6 V
-TP4: 4.9 V
-TP5: 1.6 V
-TP6: 1.6 V
+- P1: 1.9 V
+- P2: 0 V
+- P3: Ground
+- TP1: Ground
+- TP2: 4.5 V
+- TP3: 1.6 V
+- TP4: 4.9 V
+- TP5: 1.6 V
+- TP6: 1.6 V
 
 # API Prodding
  
