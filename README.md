@@ -81,10 +81,10 @@ Response:
 Turns out the plug and app communicate locally with an in-house protocol, credits to [this person](https://www.softscheck.com/en/blog/tp-link-reverse-engineering/#1-security-analysis-summary) for writing a wireshark dissector for it!
 
 A few of the available endpoints are:
-    - get_sysinfo
-    - cnCloud
-    - download_firmware
-    - get_download_state
+- get_sysinfo
+- cnCloud
+- download_firmware
+- get_download_state
 
 ### Firmware Update routine
 
